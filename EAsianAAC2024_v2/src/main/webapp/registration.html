@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+
+.section{
+	background-color: white;	
+	padding:3rem;
+}
+.title{
+	display:table-cell;
+	vertical-align: middle; 
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 3rem;
+	font-weight:bold;
+}
+.w3-bar{
+	color:white;
+	text-align:center;
+	background-color:rgb(19, 34, 61);
+}
+.home-title{
+	font-size: 3rem;
+}
+.bold-content-title{
+	font-weight:bold;
+	font-size:2rem;
+	margin-top:1rem;
+}
+.content-title{
+	font-size:2.5rem;
+}
+.img{
+	width:14rem;
+}
+
+.img-k{
+	width:10rem;
+}
+</style>
+</head>
+<body>
+<div data-include-path="header.html"></div>
+
+<div class="w3-row">
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	<div class="w3-col s12 m12 l8 w3-container container">
+		<div class="section">
+			<div class="bold-content-title">
+				<div>Registration Information</div>
+			</div>
+			<br>
+			<div class="content">
+				<div>
+					Registration for The 3rd East Asian Regional Conference on AAC is required for all participants, registration will open in October, 2023.
+				</div>
+			</div>
+			<br><hr><br>
+			<div id="conference_rates">
+				<div class = "content-title">Conference Rates</div>
+				<div class="content">
+					<table class="w3-table">
+						<tr>
+							<th>Category</th>
+							<th>Rate in US $</th>
+							<th>Lunch*</th>
+							<th>Deadline</th>
+						</tr>
+						<tr>
+							<td>Standard fee</td>
+							<td>100.00</td>
+							<td>included</td>
+							<td>Before Dec. 9, 2023</td>
+						</tr>
+						<tr>
+							<td>Student fee*</td>
+							<td>80.00</td>
+							<td>included</td>
+							<td>Before Dec. 9, 2023</td>
+						</tr>
+						<tr>
+							<td>On-site Standard fee</td>
+							<td>120.00</td>
+							<td>included</td>
+							<td>After Dec. 10, 2023</td>
+						</tr>
+						<tr>
+							<td>On-Site Student fee*</td>
+							<td>100.00</td>
+							<td>included</td>
+							<td>After Dec. 10, 2023</td>
+						</tr>
+						<tr>
+							<td>Banquet ticket**</td>
+							<td>40.00</td>
+							<td>-</td>
+							<td>Before Dec. 9. 2023</td>
+						</tr>
+					</table>
+					<ul>
+						<li>* Lunch for two days on January 9th and 10th 2024.</li><br>
+						<li>** A document to prove students will be required.</li><br>
+						<li>*** The Banquet on January 9, 2024 is not included and a separate banquet ticket must be booked.</li><br>
+					</ul>
+				</div>
+			</div>
+			<br><hr><br>
+			<div id="conference_rate_for_korean">
+				<div class="content-title">참가비 (for Korean)</div>
+				<div class="content">
+					<table class="w3-table">
+						<tr>
+							<th>구분</th>
+							<th>2023년 12월 9일까지</th>
+							<th>2023년 12월 10일 이후</th>
+						</tr>
+						<tr>
+							<td>KSAAC 회원</td>
+							<td>100,000원</td>
+							<td>120,000원</td>
+						</tr>
+						<tr>
+							<td>KSAAC 학생회원</td>
+							<td>80,000원</td>
+							<td>100,000원</td>
+						</tr>
+						<tr>
+							<td>비회원</td>
+							<td>150,000원</td>
+							<td>170,000원</td>
+						</tr>
+						<tr>
+							<td>연회참석</td>
+							<td>40,000원</td>
+							<td>-</td>
+						</tr>
+					</table>
+					<ul>
+						<li>점심은 1월 9, 10일 이틀간 제공합니다.</li><br>
+						<li>1월9일 연회 참석은 별도입니다.</li><br>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div data-include-path="footer.html"></div>
+	</div>
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	
+</div>
+
+</body>
+
+<script>
+
+window.addEventListener('load', function() {
+    var allElements = document.getElementsByTagName('*');
+    Array.prototype.forEach.call(allElements, function(el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    el.outerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+        }
+    });
+});
+
+</script>
+</html>

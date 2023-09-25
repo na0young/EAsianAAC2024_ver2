@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Invited Speakers</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.section{
+	background-color: white;	
+	padding:3rem;
+}
+.title{
+	display:table-cell;
+	vertical-align: middle; 
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 3rem;
+	font-weight:bold;
+}
+.w3-bar{
+	color:white;
+	text-align:center;
+	background-color:rgb(19, 34, 61);
+}
+.home-title{
+	font-size: 3rem;
+}
+.bold-content-title{
+	font-weight:bold;
+	font-size:2rem;
+	margin-top:1rem;
+}
+.content-title{
+	font-size:2.5rem;
+}
+.img{
+	object-fit:contain;
+}
+
+.history{
+	clear:left;
+	margin-top : 15px;
+}
+</style>
+</head>
+<body>
+<div data-include-path="header.html"></div>
+
+<div class="w3-row">
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	<div class="w3-col s12 m12 l8 w3-container container">
+		<div class="section">
+			<div class="bold-content-title">
+				<div>Invited Speakers</div>
+			</div>
+			<br>
+			
+			<div class="content" id="stephen_von_tetzchner">
+				<div class="w3-row profile">
+					<img class="img w3-col l3 m4" alt="Stephen Von Tetzchner" src="./img/invitedSpeakers/stephenVonTetzchner.jpg">
+					<div class="w3-col l9 m8 w3-padding">
+						<p>Stephen von Tetzchner (University of Oslo, Norway)</p><br>
+						<p>Augmentative and Alternative Communication through the life span</p><br>
+						<p>14:00, Jan. 8. 2023</p>
+					</div>
+				</div>
+				<div class="history">
+					Stephen von Tetzchner is professor emeritus of developmental psychology and school psychology at the Department of Psychology, 
+					University of Oslo, Norway. His research includes a wide range of issues related to typical and atypical development in general, and communication and language development in particular, 
+					including the development of individuals with intellectual disabilities, motor impairment, deafness, blindness, Rett syndrome, Tourette syndrome and autism spectrum disorder. 
+					He has worked particularly with children who fail to acquire spoken language in the normal manner and may need alternative means of language to supplement or substitute for speech. 
+					He has addressed their development of communication and language from a developmental perspective, with a focus on the transactional processes that govern development. 
+					He has published a large number of scientific articles and textbooks on typical and atypical developmental psychology, language development, augmentative and alternative communication, 
+					rehabilitation, challenging behaviour, school psychology, Batten disease and autism spectrum disorder. 
+					In 2023, Stephen von Tetzchner received 
+					<i>Communication Matters Research Award, 
+					Rehabilitation International Centennial Award for Significant Contributions and ISAAC Distinctive Service Award</i>.
+				</div>
+			</div>
+			
+		</div>
+
+		<div data-include-path="footer.html"></div>
+	</div>
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	
+</div>
+
+</body>
+
+<script>
+
+window.addEventListener('load', function() {
+    var allElements = document.getElementsByTagName('*');
+    Array.prototype.forEach.call(allElements, function(el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    el.outerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+        }
+    });
+});
+
+</script>
+</html>
