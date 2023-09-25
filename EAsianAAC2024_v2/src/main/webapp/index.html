@@ -5,17 +5,7 @@
 <title>EAsianAAC 2024 CFP</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-.header{
-	background-image: url("./img/main_background.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
-   	background-position: center center;
-	height:20rem;
-	color:white;
-	text-align:center;
-	display: table;	
-	width:100%;
-}
+
 
 .section{
 	background-color: white;	
@@ -28,15 +18,10 @@
 	font-size: 3rem;
 	font-weight:bold;
 }
-.bar{
+.w3-bar{
 	color:white;
 	text-align:center;
-	font-family: Arial, Helvetica, sans-serif ;
-	font-size: 2rem;
-	font-weight:bold;
 	background-color:rgb(19, 34, 61);
-	width:100%;
-	height:4rem;
 }
 .home-title{
 	font-size: 3rem;
@@ -59,14 +44,8 @@
 </style>
 </head>
 <body>
-<div class="header">
-	<div class="title">
-		<div>The 3rd East Asian Regional Conference on</div>
-		<div>Augmentative and Alternative Communication:</div>
-		<div>AAC Beyond Pandemic</div>
-	</div>
-</div>
-<div class="bar"></div>
+<div data-include-path="header.html"></div>
+
 <div class="w3-row">
 	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
 	<div class="w3-col s12 m12 l8 w3-container container">
@@ -94,29 +73,54 @@
 			</div>
 			<br>
 			<div class="content-title">Important Dates</div>
-				<div class="content">
-					<table class="w3-table">
-						<tr>
-							<td><b>Oct. 16, 2023</b></td>
-							<td>Paper submission deadline</td>
-						</tr>
-						<tr>
-							<td><b>Nov. 16, 2023</b></td>
-							<td>Acceptance notification</td>
-						</tr>
-						<tr>
-							<td><b>Dec. 16, 2023</b></td>
-							<td>Final manuscript submission</td>
-						</tr>
-						<tr>
-							<td><b>Dec. 16. 2023</b></td>
-							<td>Early registration deadline</td><br>
-						</tr>
-					</table>
-				</div>
+			<div class="content">
+				<table class="w3-table">
+					<tr>
+						<td><b>Oct. 16, 2023</b></td>
+						<td>Paper submission deadline</td>
+					</tr>
+					<tr>
+						<td><b>Nov. 16, 2023</b></td>
+						<td>Acceptance notification</td>
+					</tr>
+					<tr>
+						<td><b>Dec. 16, 2023</b></td>
+						<td>Final manuscript submission</td>
+					</tr>
+					<tr>
+						<td><b>Dec. 16. 2023</b></td>
+						<td>Early registration deadline</td><br>
+					</tr>
+				</table>
 			</div>
 		</div>
-		
+
+		<div data-include-path="footer.html"></div>
+	</div>
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	
 </div>
+
 </body>
+
+<script>
+
+window.addEventListener('load', function() {
+    var allElements = document.getElementsByTagName('*');
+    Array.prototype.forEach.call(allElements, function(el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    el.outerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+        }
+    });
+});
+
+</script>
 </html>
