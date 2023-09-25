@@ -1,10 +1,83 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>EAsianAAC 2024 CFP</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	.title{
+	display:table-cell;
+	vertical-align: middle; 
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 3rem;
+	font-weight:bold;
+}
+.w3-bar{
+	color:white;
+	text-align:center;
+	background-color:rgb(19, 34, 61);
+}
+.home-title{
+	font-size: 3rem;
+}
+.bold-content-title{
+	font-weight:bold;
+	font-size:2rem;
+	margin-top:1rem;
+}
+.section{
+	background-color: white;	
+	padding:3rem;
+}
+.content-title{
+	font-size:1.8rem;
+}
+.content{
+	font-size:1rem;
+}
+</style>
 </head>
 <body>
+<div data-include-path="header.html"></div>
+<div class="w3-row">
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	<div class="w3-col s12 m12 l8 w3-container container">
+		<div class="section">
+			<div class = "content-title">General Chair</div>
+			<div class = "content">Hyun Sub Sim(Ewha Womans University)</div>
+			<br>
+			<div class = "content-title">Organization Committee</div>
+			<div class = "content">Minhwa Chung (Seoul National University),<br> Ki-Hyung Hong (Sungshin Women’s University),<br>Janghyun Lim (Konyang University),<br>Heeyeon Lee (Gyeongin National University of Education),</div>
+			<br><br>
+			<div class = "content-title">Program Committee</div>
+			<div class = "content">Eunhye Park (Ewha Womans University),<br>Soojung Chae (Jeonju University)</div>
+			<div class = "content">Kyungyang Kim (Center of Communication Rights in Seoul for the People with Disabilities),<br>Seokjeong Yeon (Inha University),<br>Ji Young Na (Korea Nazarene University),</div>
+			<br>			
+		</div>
+		<div data-include-path="footer.html"></div>
+	</div>
+	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+</div>
 
 </body>
+
+<script>
+
+window.addEventListener('load', function() {
+    var allElements = document.getElementsByTagName('*');
+    Array.prototype.forEach.call(allElements, function(el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    el.outerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+        }
+    });
+});
+
+</script>
 </html>
