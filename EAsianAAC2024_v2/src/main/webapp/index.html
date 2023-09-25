@@ -5,17 +5,7 @@
 <title>EAsianAAC 2024 CFP</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-.header{
-	background-image: url("./img/main_background.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
-   	background-position: center center;
-	height:20rem;
-	color:white;
-	text-align:center;
-	display: table;	
-	width:100%;
-}
+
 
 .section{
 	background-color: white;	
@@ -54,22 +44,8 @@
 </style>
 </head>
 <body>
-<div class="header">
-	<div class="title">
-		<div>The 3rd East Asian Regional Conference on</div>
-		<div>Augmentative and Alternative Communication:</div>
-		<div>AAC Beyond Pandemic</div>
-	</div>
-</div>
-<div class="w3-bar">
-	<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-	<a href="callForPresentations.html" class="w3-bar-item w3-button w3-padding-large">Call for Presentations</a>
-	<a href="#" class="w3-bar-item w3-button w3-padding-large">Committees</a>
-	<a href="#" class="w3-bar-item w3-button w3-padding-large">Program</a>
-	<a href="#" class="w3-bar-item w3-button w3-padding-large">Registration</a>
-	<a href="#" class="w3-bar-item w3-button w3-padding-large">Venue</a>
-	<a href="#" class="w3-bar-item w3-button w3-padding-large">Sponsors</a>
-</div>
+<div data-include-path="header.html"></div>
+
 <div class="w3-row">
 	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
 	<div class="w3-col s12 m12 l8 w3-container container">
@@ -118,14 +94,33 @@
 				</table>
 			</div>
 		</div>
-		<div class="institution-group w3-row">
-			<div class="institution w3-third w3-center"><img class="img-k" alt="KSAAC" src="./img/ksaac.jpg"></div>
-			<div class="institution w3-third w3-center"><img class="img" alt="Seoul Univ." src="./img/SNU.jpg"></div>
-			<div class="institution w3-third w3-center"><img class="img" alt="Ewha Univ." src="./img/EWHA.jpg"></div>
-		</div>
-		<br>
+
+		<div data-include-path="footer.html"></div>
 	</div>
 	<div class="w3-col w3-hide-small w3-hide-medium l2">&nbsp;</div>
+	
 </div>
+
 </body>
+
+<script>
+
+window.addEventListener('load', function() {
+    var allElements = document.getElementsByTagName('*');
+    Array.prototype.forEach.call(allElements, function(el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    el.outerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+        }
+    });
+});
+
+</script>
 </html>
