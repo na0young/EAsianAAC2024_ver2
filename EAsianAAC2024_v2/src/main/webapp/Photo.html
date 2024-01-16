@@ -33,21 +33,52 @@
 	font-size:2.5rem;
 }
 .img{
-	width:14rem;
+	width : 240px;
+	height : 170px;
+	overflow:hidden;
+	object-fit : cover;
+	margin : 5px;
 }
 
 .img-k{
 	width:10rem;
 }
-#conferencePicture{
-	display : grid;
+.conferencePicture{
+	/* display : grid; */
 	/* grid-template-columns : 200px 200px 200px;
 	grid-template-rows : 100px 200px; */
-	grid-template-columns : repeat(auto-fit, minmax(30px, 1fr));
-	margin : 30px;
+	display:grid;
+	grid-gap : 10px 10px;
+	/*grid-template-columns : repeat(auto-fit, minmax(30px, 1fr));*/
 }
 .items{
-	display : inline;
+	width : 220px;
+	height : 170x;
+	display : inline-block;
+	overflow:hidden;
+}
+.items p{
+	width:220px;
+	height: 45px; 
+}
+.thumbnail{
+	display: inline-block;
+	color:inherit;
+	width : 100%;
+	height : 100%;
+	overflow:hidden;
+	margin: 10px;
+	transition: transform 0.3s;
+}
+#a{
+	background-color:red;
+}
+
+.announce{
+	font-size:1.5rem;
+}
+.text-s{
+	font-size: 13.2px;
 }
 
 </style>
@@ -74,46 +105,212 @@
 			<div class="bold-content-title">
 				<div>Conference Photos</div>
 			</div>
+			<i class="announce">If you click on the picture, you can download it.</i>
 			<br>
-			<h2>Day1</h2>
+			<br>
+			<h2><b>[ Day1 - 24.01.08 ]</b></h2>
          
          <div class="conferencePictures" id="day1">
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/Opening/Day1_Opening_1.jpg" download="Day1_Opening_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/Opening/Day1_Opening_1.jpg"><p>Opening</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/Opening/Day1_Opening_2.jpg" download="Day1_Opening_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/Opening/Day1_Opening_2.jpg"><p>Opening</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/Opening/Day1_Opening_3.jpg" download="Day1_Opening_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/Opening/Day1_Opening_3.jpg"><p>Opening</p></a></div>
             
-            <div class="items"><a href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg" download="Day1_CongratulatoryRemarks_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg"></a></div>
-            <div class="items"><a href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg" download="Day1_CongratulatoryRemarks_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg"></a></div>
-            <div class="items"><a href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg" download="Day1_CongratulatoryRemarks_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
-            <div class="items"><a href="#" download="hakjisa.jpg"><img class="img" alt="picture" src="./img/hakjisa.jpg"></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg" download="Day1_CongratulatoryRemarks_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg"><p>Congratulatory Remarks</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_2.jpg" download="Day1_CongratulatoryRemarks_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_2.jpg"><p>Congratulatory Remarks</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_1.jpg" download="Day1_I-01_StephenVonTetzchner_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_1.jpg"><p>[I-01] Stephen Von Tetzchner</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_2.jpg" download="Day1_I-01_StephenVonTetzchner_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_2.jpg"><p>[I-01] Stephen Von Tetzchner</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_3.jpg" download="Day1_I-01_StephenVonTetzchner_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_3.jpg"><p>[I-01] Stephen Von Tetzchner</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_4.jpg" download="Day1_I-01_StephenVonTetzchner_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_4.jpg"><p>[I-01] Stephen Von Tetzchner</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_5.jpg" download="Day1_I-01_StephenVonTetzchner_5.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-01/Day1_I-01_StephenVonTetzchner_5.jpg"><p>[I-01] Stephen Von Tetzchner</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_1.jpg" download="Day1_I-02_SarahYong_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_1.jpg"><p>[I-02] Sarah Yong</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_2.jpg" download="Day1_I-02_SarahYong_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_2.jpg"><p>[I-02] Sarah Yong</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_3.jpg" download="Day1_I-02_SarahYong_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_3.jpg"><p>[I-02] Sarah Yong</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_4.jpg" download="Day1_I-02_SarahYong_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-02/Day1_I-02_SarahYong_4.jpg"><p>[I-02] Sarah Yong</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-03/Day1_I-03_CathyBasterfield_1.jpg" download="Day1_I-03_CathyBasterfield_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-03/Day1_I-03_CathyBasterfield_1.jpg"><p>[I-03] Cathy Basterfield</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-03/Day1_I-03_CathyBasterfield_2.jpg" download="Day1_I-03_CathyBasterfield_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-03/Day1_I-03_CathyBasterfield_2.jpg"><p>[I-03] Cathy Basterfield</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/I-03/Day1_I-03_CathyBasterfield_3.jpg" download="Day1_I-03_CathyBasterfield_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/I-03/Day1_I-03_CathyBasterfield_3.jpg"><p>[I-03] Cathy Basterfield</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-01/Day1_O-01_XinxinZhao_1.jpg" download="Day1_O-01_XinxinZhao_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-01/Day1_O-01_XinxinZhao_1.jpg"><p>[O-01] Xinxin Zhao</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-01/Day1_O-01_XinxinZhao_2.jpg" download="Day1_O-01_XinxinZhao_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-01/Day1_O-01_XinxinZhao_2.jpg"><p>[O-01] Xinxin Zhao</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-01/Day1_O-01_XinxinZhao_3.jpg" download="Day1_O-01_XinxinZhao_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-01/Day1_O-01_XinxinZhao_3.jpg"><p>[O-01] Xinxin Zhao</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_1.jpg" download="Day1_O-02_SuzunaKitayama_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_1.jpg"><p>[O-02] Suzuna Kitayama</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_2.jpg" download="Day1_O-02_SuzunaKitayama_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_2.jpg"><p>[O-02] Suzuna Kitayama</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_3.jpg" download="Day1_O-02_SuzunaKitayama_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_3.jpg"><p>[O-02] Suzuna Kitayama</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_4.jpg" download="Day1_O-02_SuzunaKitayama_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-02/Day1_O-02_SuzunaKitayama_4.jpg"><p>[O-02] Suzuna Kitayama</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-03/Day1_O-03_AldonaMysakowskaAdamczyk_1.jpg" download="Day1_O-03_AldonaMysakowskaAdamczyk_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-03/Day1_O-03_AldonaMysakowskaAdamczyk_1.jpg"><p>[O-03] Aldona Mysakowska-Adamczyk</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-03/Day1_O-03_AldonaMysakowskaAdamczyk_2.jpg" download="Day1_O-03_AldonaMysakowskaAdamczyk_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-03/Day1_O-03_AldonaMysakowskaAdamczyk_2.jpg"><p>[O-03] Aldona Mysakowska-Adamczyk</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-03/Day1_O-03_AldonaMysakowskaAdamczyk_3.jpg" download="Day1_O-03_AldonaMysakowskaAdamczyk_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-03/Day1_O-03_AldonaMysakowskaAdamczyk_3.jpg"><p>[O-03] Aldona Mysakowska-Adamczyk</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-04/Day1_O-04_NithaUngsuprasert_1.jpg" download="Day1_O-04_NithaUngsuprasert_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-04/Day1_O-04_NithaUngsuprasert_1.jpg"><p>[O-04] Nitha Ungsuprasert</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-04/Day1_O-04_NithaUngsuprasert_2.jpg" download="Day1_O-04_NithaUngsuprasert_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-04/Day1_O-04_NithaUngsuprasert_2.jpg"><p>[O-04] Nitha Ungsuprasert</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-04/Day1_O-04_NithaUngsuprasert_3.jpg" download="Day1_O-04_NithaUngsuprasert_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-04/Day1_O-04_NithaUngsuprasert_3.jpg"><p>[O-04] Nitha Ungsuprasert</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-05/Day1_O-05_NyamaaBatmunkh_1.jpg" download="Day1_O-05_NyamaaBatmunkh_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-05/Day1_O-05_NyamaaBatmunkh_1.jpg"><p>[O-05] Nyamaa Batmunkh</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-05/Day1_O-05_NyamaaBatmunkh_2.jpg" download="Day1_O-05_NyamaaBatmunkh_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-05/Day1_O-05_NyamaaBatmunkh_2.jpg"><p>[O-05] Nyamaa Batmunkh</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/O-05/Day1_O-05_NyamaaBatmunkh_3.jpg" download="Day1_O-05_NyamaaBatmunkh_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/O-05/Day1_O-05_NyamaaBatmunkh_3.jpg"><p>[O-05] Nyamaa Batmunkh</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_1.jpg" download="Day1_GroupPhoto_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_1.jpg"><p>Group Photo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_2.jpg" download="Day1_GroupPhoto_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_2.jpg"><p>Group Photo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_banner_1.png" download="Day1_GroupPhoto_banner_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_banner_1.png"><p>Group Photo Banner</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_banner_2.png" download="Day1_GroupPhoto_banner_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/GroupPhoto/Day1_GroupPhoto_banner_2.png"><p>Group Photo Banner</p></a></div>
             
          </div>
          
          <br><br><hr><br>
          
-         <h2>Day2</h2>
+         <h2><b>[ Day2 - 24.01.09 ]</b></h2>
          
          <div class="conferencePictures" id="day2">
+          
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-04/Day2_I-04_PatMiranda_1.jpg" download="Day2_I-04_PatMiranda_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/I-04/Day2_I-04_PatMiranda_1.jpg"><p>[I-04] Pat Miranda</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-04/Day2_I-04_PatMiranda_2.jpg" download="Day2_I-04_PatMiranda_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/I-04/Day2_I-04_PatMiranda_2.jpg"><p>[I-04] Pat Miranda</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-04/Day2_I-04_PatMiranda_3.jpg" download="Day2_I-04_PatMiranda_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/I-04/Day2_I-04_PatMiranda_3.jpg"><p>[I-04] Pat Miranda</p></a></div>
             
-            <div class="items"><a href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg" download="Day1_CongratulatoryRemarks_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg"></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-05/Day2_I-05_SojungKim_1.jpg" download="Day2_I-05_SojungKim_1.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-05/Day2_I-05_SojungKim_1.jpg"><p>[I-05] Sojung Kim</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-05/Day2_I-05_SojungKim_2.jpg" download="Day2_I-05_SojungKim_2.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-05/Day2_I-05_SojungKim_2.jpg"><p>[I-05] Sojung Kim</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-05/Day2_I-05_SojungKim_3.jpg" download="Day2_I-05_SojungKim_3.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-05/Day2_I-05_SojungKim_3.jpg"><p>[I-05] Sojung Kim</p></a></div>
             
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-06/Day2_I-06_SangeunShin_1.jpg" download="Day2_I-06_SangeunShin_1.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-06/Day2_I-06_SangeunShin_1.jpg"><p>[I-06] Sangeun Shin</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-06/Day2_I-06_SangeunShin_2.jpg" download="Day2_I-06_SangeunShin_2.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-06/Day2_I-06_SangeunShin_2.jpg"><p>[I-06] Sangeun Shin</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-06/Day2_I-06_SangeunShin_3.jpg" download="Day2_I-06_SangeunShin_3.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-06/Day2_I-06_SangeunShin_3.jpg"><p>[I-06] Sangeun Shin</p></a></div>
             
+         	<div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-07/Day2_I-07_SoojungChae_1.jpg" download="Day2_I-07_SoojungChae_1.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-07/Day2_I-07_SoojungChae_1.jpg"><p>[I-07] Soojung Chae</p></a></div>             
+         	<div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-07/Day2_I-07_SoojungChae_2.jpg" download="Day2_I-07_SoojungChae_2.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-07/Day2_I-07_SoojungChae_2.jpg"><p>[I-07] Soojung Chae</p></a></div>   
+         	<div class="items"><a class="thumbnail" href="./img/Photos/Day2/I-07/Day2_I-07_SoojungChae_3.jpg" download="Day2_I-07_SoojungChae_3.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/I-07/Day2_I-07_SoojungChae_3.jpg"><p>[I-07] Soojung Chae</p></a></div>     
+         	
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-06/Day2_O-06_RosannaYuenYanChan_1.jpg" download="Day2_O-06_RosannaYuenYanChan_1.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-06/Day2_O-06_RosannaYuenYanChan_1.jpg"><p>[O-06] Rosanna Yuen-Yan Chan</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-06/Day2_O-06_RosannaYuenYanChan_2.jpg" download="Day2_O-06_RosannaYuenYanChan_2.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-06/Day2_O-06_RosannaYuenYanChan_2.jpg"><p>[O-06] Rosanna Yuen-Yan Chan</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-06/Day2_O-06_RosannaYuenYanChan_3.jpg" download="Day2_O-06_RosannaYuenYanChan_3.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-06/Day2_O-06_RosannaYuenYanChan_3.jpg"><p>[O-06] Rosanna Yuen-Yan Chan</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-07/Day2_O-07_SarahYong_1.jpg" download="Day2_O-07_SarahYong_1.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-07/Day2_O-07_SarahYong_1.jpg"><p>[O-07] Sarah Yong</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-07/Day2_O-07_SarahYong_2.jpg" download="Day2_O-07_SarahYong_2.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-07/Day2_O-07_SarahYong_2.jpg"><p>[O-07] Sarah Yong</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-07/Day2_O-07_SarahYong_3.jpg" download="Day2_O-07_SarahYong_3.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-07/Day2_O-07_SarahYong_3.jpg"><p>[O-07] Sarah Yong</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-08/Day2_O-08_TuHnine_1.jpg" download="Day2_O-08_TuHnine_1.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-08/Day2_O-08_TuHnine_1.jpg"><p>[O-08] Tu Hnine</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-08/Day2_O-08_TuHnine_2.jpg" download="Day2_O-08_TuHnine_2.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-08/Day2_O-08_TuHnine_2.jpg"><p>[O-08] Tu Hnine</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-08/Day2_O-08_TuHnine_3.jpg" download="Day2_O-08_TuHnine_3.jpg"><img class="img" alt = "picture" src="./img/Photos/Day2/O-08/Day2_O-08_TuHnine_3.jpg"><p>[O-08] Tu Hnine</p></a></div>
+           
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-09/Day2_O-09_KyoungockPark_1.jpg" download="Day2_O-09_KyoungockPark_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-09/Day2_O-09_KyoungockPark_1.jpg"><p>[O-09] Kyoungock Park</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-09/Day2_O-09_KyoungockPark_2.jpg" download="Day2_O-09_KyoungockPark_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-09/Day2_O-09_KyoungockPark_2.jpg"><p>[O-09] Kyoungock Park</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-09/Day2_O-09_KyoungockPark_3.jpg" download="Day2_O-09_KyoungockPark_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-09/Day2_O-09_KyoungockPark_3.jpg"><p>[O-09] Kyoungock Park</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-10/Day2_O-10_SangeunShin_1.jpg" download="Day2_O-10_SangeunShin_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-10/Day2_O-10_SangeunShin_1.jpg"><p>[O-10] Sangeun Shin</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-10/Day2_O-10_SangeunShin_2.jpg" download="Day2_O-10_SangeunShin_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-10/Day2_O-10_SangeunShin_2.jpg"><p>[O-10] Sangeun Shin</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-10/Day2_O-10_SangeunShin_3.jpg" download="Day2_O-10_SangeunShin_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-10/Day2_O-10_SangeunShin_3.jpg"><p>[O-10] Sangeun Shin</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-11/Day2_O-11_SungahYoo_1.jpg" download="Day2_O-11_SungahYoo_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-11/Day2_O-11_SungahYoo_1.jpg"><p>[O-11] Sungah Yoo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-11/Day2_O-11_SungahYoo_2.jpg" download="Day2_O-11_SungahYoo_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-11/Day2_O-11_SungahYoo_2.jpg"><p>[O-11] Sungah Yoo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-11/Day2_O-11_SungahYoo_3.jpg" download="Day2_O-11_SungahYoo_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-11/Day2_O-11_SungahYoo_3.jpg"><p>[O-11] Sungah Yoo</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-12/Day2_O-12_HyeonsooKang_1.jpg" download="Day2_O-12_HyeonsooKang_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-12/Day2_O-12_HyeonsooKang_1.jpg"><p>[O-12] Hyeonsoo Kang</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-12/Day2_O-12_HyeonsooKang_2.jpg" download="Day2_O-12_HyeonsooKang_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-12/Day2_O-12_HyeonsooKang_2.jpg"><p>[O-12] Hyeonsoo Kang</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-12/Day2_O-12_HyeonsooKang_3.jpg" download="Day2_O-12_HyeonsooKang_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-12/Day2_O-12_HyeonsooKang_3.jpg"><p>[O-12] Hyeonsoo Kang</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-13/Day2_O-13_KyungyangKim_1.jpg" download="Day2_O-13_KyungyangKim_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-13/Day2_O-13_KyungyangKim_1.jpg"><p>[O-13] Kyungyang Kim</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-13/Day2_O-13_KyungyangKim_2.jpg" download="Day2_O-13_KyungyangKim_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-13/Day2_O-13_KyungyangKim_2.jpg"><p>[O-13] Kyungyang Kim</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-13/Day2_O-13_KyungyangKim_3.jpg" download="Day2_O-13_KyungyangKim_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-13/Day2_O-13_KyungyangKim_3.jpg"><p>[O-13] Kyungyang Kim</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-14/Day2_O-14_JiwonLee_1.jpg" download="Day2_O-14_JiwonLee_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-14/Day2_O-14_JiwonLee_1.jpg"><p>[O-14] Jiwon Lee</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-14/Day2_O-14_JiwonLee_2.jpg" download="Day2_O-14_JiwonLee_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-14/Day2_O-14_JiwonLee_2.jpg"><p>[O-14] Jiwon Lee</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-14/Day2_O-14_JiwonLee_3.jpg" download="Day2_O-14_JiwonLee_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-14/Day2_O-14_JiwonLee_3.jpg"><p>[O-14] Jiwon Lee</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-15/Day2_O-15_SeonwooLee_1.jpg" download="Day2_O-15_SeonwooLee_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-15/Day2_O-15_SeonwooLee_1.jpg"><p>[O-15] Seonwoo Lee</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-15/Day2_O-15_SeonwooLee_2.jpg" download="Day2_O-15_SeonwooLee_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-15/Day2_O-15_SeonwooLee_2.jpg"><p>[O-15] Seonwoo Lee</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-15/Day2_O-15_SeonwooLee_3.jpg" download="Day2_O-15_SeonwooLee_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-15/Day2_O-15_SeonwooLee_3.jpg"><p>[O-15] Seonwoo Lee</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-16/Day2_O-16_JuhyeonKim_1.jpg" download="Day2_O-16_JuhyeonKim_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-16/Day2_O-16_JuhyeonKim_1.jpg"><p>[O-16] Juhyeon Kim</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-16/Day2_O-16_JuhyeonKim_2.jpg" download="Day2_O-16_JuhyeonKim_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-16/Day2_O-16_JuhyeonKim_2.jpg"><p>[O-16] Juhyeon Kim</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/O-16/Day2_O-16_JuhyeonKim_3.jpg" download="Day2_O-16_JuhyeonKim_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/O-16/Day2_O-16_JuhyeonKim_3.jpg"><p>[O-16] Juhyeon Kim</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_01.jpg" download="Day2_PosterNExhibition_01.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_01.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_02.jpg" download="Day2_PosterNExhibition_02.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_02.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_03.jpg" download="Day2_PosterNExhibition_03.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_03.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_04.jpg" download="Day2_PosterNExhibition_04.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_04.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_05.jpg" download="Day2_PosterNExhibition_05.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_05.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_06.jpg" download="Day2_PosterNExhibition_06.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_06.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_07.jpg" download="Day2_PosterNExhibition_07.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_07.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_08.jpg" download="Day2_PosterNExhibition_08.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_08.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_09.jpg" download="Day2_PosterNExhibition_09.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_09.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_10.jpg" download="Day2_PosterNExhibition_10.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_10.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_11.jpg" download="Day2_PosterNExhibition_11.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_11.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_12.jpg" download="Day2_PosterNExhibition_12.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_12.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_13.jpg" download="Day2_PosterNExhibition_13.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_13.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_14.jpg" download="Day2_PosterNExhibition_14.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_14.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_15.jpg" download="Day2_PosterNExhibition_15.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_15.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_16.jpg" download="Day2_PosterNExhibition_16.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_16.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_17.jpg" download="Day2_PosterNExhibition_17.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_17.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_18.jpg" download="Day2_PosterNExhibition_18.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_18.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_19.jpg" download="Day2_PosterNExhibition_19.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_19.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_20.jpg" download="Day2_PosterNExhibition_20.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_20.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_21.jpg" download="Day2_PosterNExhibition_21.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_21.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_22.jpg" download="Day2_PosterNExhibition_22.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_22.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_23.jpg" download="Day2_PosterNExhibition_23.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_23.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_24.jpg" download="Day2_PosterNExhibition_24.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_24.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_25.jpg" download="Day2_PosterNExhibition_25.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_25.jpg"><p>Poster Session & Exhibition</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_26.jpg" download="Day2_PosterNExhibition_26.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/PosterNExhibition/Day2_PosterNExhibition_26.jpg"><p>Poster Session & Exhibition</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Day2_Banquet_1.jpg" download="Day2_Banquet_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Day2_Banquet_1.jpg"><p>Banquet</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Day2_Banquet_2.jpg" download="Day2_Banquet_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Day2_Banquet_2.jpg"><p>Banquet</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Day2_Banquet_3.JPG" download="Day2_Banquet_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Day2_Banquet_3.JPG"><p>Banquet</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Day2_Banquet_4.jpg" download="Day2_Banquet_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Day2_Banquet_4.jpg"><p>Banquet</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Day2_Banquet_5.jpg" download="Day2_Banquet_5.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Day2_Banquet_5.jpg"><p>Banquet</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_1.jpg" download="Day2_Banquet_GroupPhoto_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_1.jpg"><p>Banquet Group Photo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_2.jpg" download="Day2_Banquet_GroupPhoto_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_2.jpg"><p>Banquet Group Photo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_3.jpg" download="Day2_Banquet_GroupPhoto_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_3.jpg"><p>Banquet Group Photo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_4.jpg" download="Day2_Banquet_GroupPhoto_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_4.jpg"><p>Banquet Group Photo</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_5.jpg" download="Day2_Banquet_GroupPhoto_5.jpg"><img class="img" alt="picture" src="./img/Photos/Day2/Banquet/Banquet_GroupPhoto/Day2_Banquet_GroupPhoto_5.jpg"><p>Banquet Group Photo</p></a></div>
          </div>
          
          <br><br><hr><br>
          
-         <h2>Day2</h2>
+         <h2><b>[ Day3 - 24.01.10 ]</b></h2>
          
          <div class="conferencePictures" id="day3">
             
-            <div class="items"><a href="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg" download="Day1_CongratulatoryRemarks_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day1/CongratulatoryRemarks/Day1_CongratulatoryRemarks_1.jpg"></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_1.jpg" download="Day3_I-08_YoosunChung_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_1.jpg"><p>[I-08] Yoosun Chung</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_2.jpg" download="Day3_I-08_YoosunChung_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_2.jpg"><p>[I-08] Yoosun Chung</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_3.jpg" download="Day3_I-08_YoosunChung_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_3.jpg"><p>[I-08] Yoosun Chung</p></a></div>      
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_4.jpg" download="Day3_I-08_YoosunChung_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_4.jpg"><p>[I-08] Yoosun Chung</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_5.jpg" download="Day3_I-08_YoosunChung_5.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_5.jpg"><p>[I-08] Yoosun Chung</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_6.jpg" download="Day3_I-08_YoosunChung_6.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/I-08/Day3_I-08_YoosunChung_6.jpg"><p>[I-08] Yoosun Chung</p></a></div>      
             
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-01/Day3_A-01_HeejuLim_1.PNG" download="Day3_A-01_HeejuLim_1.PNG"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-01/Day3_A-01_HeejuLim_1.PNG"><p>[A-01] Heeju Lim</p></a></div>      
+          	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-01/Day3_A-01_HeejuLim_2.JPG" download="Day3_A-01_HeejuLim_2.JPG"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-01/Day3_A-01_HeejuLim_2.JPG"><p>[A-01] Heeju Lim</p></a></div>   
+          	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-01/Day3_A-01_HeejuLim_3.jpg" download="Day3_A-01_HeejuLim_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-01/Day3_A-01_HeejuLim_3.jpg"><p>[A-01] Heeju Lim</p></a></div>
+          	
+          	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-02/Day3_A-02_JaeheeJungBokhyunKo_1.jpg" download="Day3_A-02_JaeheeJungBokhyunKo_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-02/Day3_A-02_JaeheeJungBokhyunKo_1.jpg"><p>[A-02] Jaehee Jung Bokhyun Ko</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-02/Day3_A-02_JaeheeJungBokhyunKo_2.jpg" download="Day3_A-02_JaeheeJungBokhyunKo_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-02/Day3_A-02_JaeheeJungBokhyunKo_2.jpg"><p>[A-02] Jaehee Jung Bokhyun Ko</p></a></div>
+          	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-02/Day3_A-02_JaeheeJungBokhyunKo_3.jpg" download="Day3_A-02_JaeheeJungBokhyunKo_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-02/Day3_A-02_JaeheeJungBokhyunKo_3.jpg"><p>[A-02] Jaehee Jung Bokhyun Ko</p></a></div>
             
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_1.JPG" download="Day3_A-03_Plex_1.JPG"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_1.JPG"><p>[A-03] Plex</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_2.JPG" download="Day3_A-03_Plex_2.JPG"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_2.JPG"><p>[A-03] Plex</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_3.JPG" download="Day3_A-03_Plex_3.JPG"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_3.JPG"><p>[A-03] Plex</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_4.jpg" download="Day3_A-03_Plex_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_4.jpg"><p>[A-03] Plex</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_5.jpg" download="Day3_A-03_Plex_5.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-03/Day3_A-03_Plex_5.jpg"><p>[A-03] Plex</p></a></div>
+           
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_1.jpg" download="Day3_A-04_HuimangSchool_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_1.jpg"><p>[A-04] Huimang School</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_2.jpg" download="Day3_A-04_HuimangSchool_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_2.jpg"><p>[A-04] Huimang School</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_3.jpg" download="Day3_A-04_HuimangSchool_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_3.jpg"><p>[A-04] Huimang School</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_4.jpg" download="Day3_A-04_HuimangSchool_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-04/Day3_A-04_HuimangSchool_4.jpg"><p>[A-04] Huimang School</p></a></div>
+            
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-05/Day3_A-05_On_1.jpg" download="Day3_A-05_On_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-05/Day3_A-05_On_1.jpg"><p>[A-05] On</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-05/Day3_A-05_On_2.jpg" download="Day3_A-05_On_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-05/Day3_A-05_On_2.jpg"><p>[A-05] On</p></a></div>
+            <div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/A-05/Day3_A-05_On_3.jpg" download="Day3_A-05_On_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/A-05/Day3_A-05_On_3.jpg"><p>[A-05] On</p></a></div>
+        	
+        	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_1.jpg" download="Day3_GroupPhoto_1.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_1.jpg"><p>Group Photo</p></a></div>
+        	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_2.jpg" download="Day3_GroupPhoto_2.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_2.jpg"><p>Group Photo</p></a></div>
+       	  	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_3.jpg" download="Day3_GroupPhoto_3.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_3.jpg"><p>Group Photo</p></a></div>
+       	 	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_4.jpg" download="Day3_GroupPhoto_4.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/ContestWinningAnnouncement/GroupPhoto/Day3_GroupPhoto_4.jpg"><p>Group Photo</p></a></div>
+       	 	<div class="items"><a class="thumbnail" href="./img/Photos/Day3/Closing/Day3_Closing.jpg" download="Day3_Closing.jpg"><img class="img" alt="picture" src="./img/Photos/Day3/Closing/Day3_Closing.jpg"><p>Closing</p></a></div>
          </div>
+         
+         
 			
 		</div>
 		
